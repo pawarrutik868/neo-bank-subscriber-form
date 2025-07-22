@@ -1,0 +1,692 @@
+/* SubscriberRegistration Component Styles */
+
+.SubscriberRegistration-container {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  min-height: 100vh;
+  color: #333333;
+  line-height: 1.4;
+}
+
+/* Header Styles */
+.SubscriberRegistration-header {
+  background: linear-gradient(135deg, #2e8b57 0%, #3cb371 100%);
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100px;
+}
+
+.SubscriberRegistration-logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.SubscriberRegistration-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.SubscriberRegistration-logo-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(45deg, #ff6b35, #f7931e, #2e8b57);
+  border-radius: 50% 0 50% 0;
+  position: relative;
+}
+
+.SubscriberRegistration-logo-icon::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+
+.SubscriberRegistration-logo-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.SubscriberRegistration-bank-name {
+  font-size: 32px;
+  font-weight: bold;
+  color: #ff6b35;
+  letter-spacing: 1px;
+}
+
+.SubscriberRegistration-bank-subtitle {
+  font-size: 14px;
+  color: #2e8b57;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.SubscriberRegistration-bank-tagline {
+  font-size: 12px;
+  color: #666;
+  font-style: italic;
+}
+
+.SubscriberRegistration-nps-section {
+  text-align: right;
+}
+
+.SubscriberRegistration-nps-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  color: #2e8b57;
+}
+
+.SubscriberRegistration-nps-subtitle {
+  font-size: 16px;
+  margin: 5px 0 0 0;
+  color: #ff6b35;
+}
+
+.SubscriberRegistration-hindi {
+  font-style: italic;
+}
+
+.SubscriberRegistration-nps-text {
+  font-weight: bold;
+  color: #2e8b57;
+}
+
+/* Help Section */
+.SubscriberRegistration-help-section {
+  background-color: #f8f9fa;
+  padding: 10px 30px;
+  font-size: 12px;
+  text-align: right;
+  color: #666;
+}
+
+.SubscriberRegistration-help-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.SubscriberRegistration-help-link:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+.SubscriberRegistration-main-content {
+  padding: 20px 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.SubscriberRegistration-page-title {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+.SubscriberRegistration-cookie-notice {
+  color: #dc3545;
+  font-size: 14px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.SubscriberRegistration-content-wrapper {
+  display: flex;
+  gap: 20px;
+  min-height: 600px;
+}
+
+/* Sidebar Styles */
+.SubscriberRegistration-sidebar {
+  flex: 0 0 300px;
+  background-color: #f8f9fa;
+}
+
+.SubscriberRegistration-nav-item {
+  padding: 15px 20px;
+  cursor: pointer;
+  border-bottom: 1px solid #dee2e6;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  transition: background-color 0.2s;
+}
+
+.SubscriberRegistration-nav-item:hover {
+  background-color: #e9ecef;
+}
+
+.SubscriberRegistration-nav-item-active {
+  background-color: #ff6b35;
+  color: white;
+  font-weight: 600;
+}
+
+.SubscriberRegistration-nav-item:first-child {
+  border-radius: 4px 4px 0 0;
+}
+
+.SubscriberRegistration-nav-item:last-child {
+  border-radius: 0 0 4px 4px;
+  border-bottom: none;
+}
+
+/* Form Section */
+.SubscriberRegistration-form-section {
+  flex: 1;
+  background-color: white;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.SubscriberRegistration-form-container {
+  max-width: 800px;
+}
+
+.SubscriberRegistration-form-title {
+  font-size: 20px;
+  color: #666;
+  margin: 0 0 20px 0;
+  font-weight: normal;
+}
+
+.SubscriberRegistration-form-subtitle {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Form Groups */
+.SubscriberRegistration-form-group {
+  margin-bottom: 25px;
+}
+
+.SubscriberRegistration-section-label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.SubscriberRegistration-required {
+  color: #dc3545;
+  margin-left: 3px;
+}
+
+/* Options Grid */
+.SubscriberRegistration-options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.SubscriberRegistration-option-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Radio and Checkbox Styles */
+.SubscriberRegistration-radio-label,
+.SubscriberRegistration-checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.SubscriberRegistration-radio-input,
+.SubscriberRegistration-checkbox {
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.SubscriberRegistration-radio-input {
+  width: 16px;
+  height: 16px;
+  accent-color: #2e8b57;
+}
+
+.SubscriberRegistration-checkbox {
+  width: 16px;
+  height: 16px;
+  accent-color: #2e8b57;
+}
+
+.SubscriberRegistration-radio-text,
+.SubscriberRegistration-checkbox-text {
+  color: #333;
+}
+
+/* Form Fields */
+.SubscriberRegistration-field-label {
+  display: block;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.SubscriberRegistration-input,
+.SubscriberRegistration-select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: white;
+  transition: border-color 0.2s;
+}
+
+.SubscriberRegistration-input:focus,
+.SubscriberRegistration-select:focus {
+  outline: none;
+  border-color: #2e8b57;
+  box-shadow: 0 0 0 2px rgba(46, 139, 87, 0.2);
+}
+
+.SubscriberRegistration-date-input {
+  max-width: 200px;
+  position: relative;
+}
+
+.SubscriberRegistration-readonly-field {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  padding: 10px 12px;
+  border-radius: 4px;
+  color: #6c757d;
+  font-size: 14px;
+}
+
+.SubscriberRegistration-select {
+  cursor: pointer;
+  max-width: 300px;
+}
+
+/* Details Section */
+.SubscriberRegistration-details-title {
+  font-size: 16px;
+  color: #333;
+  margin: 30px 0 20px 0;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Submit Section */
+.SubscriberRegistration-submit-section {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.SubscriberRegistration-submit-button {
+  background-color: #2e8b57;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.SubscriberRegistration-submit-button:hover:not(:disabled) {
+  background-color: #228b52;
+}
+
+.SubscriberRegistration-submit-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Notes Section */
+.SubscriberRegistration-notes-section {
+  margin: 40px auto 20px;
+  max-width: 1200px;
+  padding: 0 30px;
+}
+
+.SubscriberRegistration-notes-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.SubscriberRegistration-notes-list {
+  list-style: disc;
+  padding-left: 20px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.SubscriberRegistration-notes-list li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* Footer */
+.SubscriberRegistration-footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  padding: 15px 30px 20px;
+  margin-top: 40px;
+}
+
+.SubscriberRegistration-footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.SubscriberRegistration-browser-info {
+  font-size: 12px;
+  color: #6c757d;
+  margin: 0;
+}
+
+.SubscriberRegistration-privacy-link {
+  font-size: 12px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.SubscriberRegistration-privacy-link:hover {
+  text-decoration: underline;
+}
+
+.SubscriberRegistration-footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.SubscriberRegistration-protean-logo {
+  width: 20px;
+  height: 20px;
+  background-color: #2e8b57;
+  border-radius: 50%;
+  position: relative;
+}
+
+.SubscriberRegistration-protean-logo::after {
+  content: 'P';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.SubscriberRegistration-powered-text {
+  font-size: 12px;
+  color: #6c757d;
+}
+
+/* Responsive Design */
+
+/* Tablet Styles */
+@media screen and (max-width: 1024px) {
+  .SubscriberRegistration-header {
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .SubscriberRegistration-nps-section {
+    text-align: center;
+  }
+
+  .SubscriberRegistration-main-content {
+    padding: 15px 20px;
+  }
+
+  .SubscriberRegistration-content-wrapper {
+    flex-direction: column;
+  }
+
+  .SubscriberRegistration-sidebar {
+    flex: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .SubscriberRegistration-nav-item {
+    border-radius: 4px;
+    border-bottom: none;
+    text-align: center;
+  }
+
+  .SubscriberRegistration-options-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .SubscriberRegistration-header {
+    padding: 10px 15px;
+  }
+
+  .SubscriberRegistration-logo {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .SubscriberRegistration-logo-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .SubscriberRegistration-logo-icon::after {
+    width: 20px;
+    height: 20px;
+  }
+
+  .SubscriberRegistration-bank-name {
+    font-size: 24px;
+  }
+
+  .SubscriberRegistration-nps-title {
+    font-size: 24px;
+  }
+
+  .SubscriberRegistration-help-section {
+    padding: 8px 15px;
+    font-size: 11px;
+  }
+
+  .SubscriberRegistration-main-content {
+    padding: 10px 15px;
+  }
+
+  .SubscriberRegistration-form-section {
+    padding: 20px 15px;
+  }
+
+  .SubscriberRegistration-sidebar {
+    grid-template-columns: 1fr;
+  }
+
+  .SubscriberRegistration-options-grid {
+    gap: 12px;
+  }
+
+  .SubscriberRegistration-footer {
+    padding: 15px;
+  }
+
+  .SubscriberRegistration-footer-content {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .SubscriberRegistration-browser-info {
+    font-size: 11px;
+  }
+}
+
+/* iPhone and Small Mobile Styles */
+@media screen and (max-width: 480px) {
+  .SubscriberRegistration-header {
+    padding: 8px 10px;
+  }
+
+  .SubscriberRegistration-logo {
+    gap: 8px;
+  }
+
+  .SubscriberRegistration-bank-name {
+    font-size: 20px;
+  }
+
+  .SubscriberRegistration-bank-subtitle {
+    font-size: 12px;
+  }
+
+  .SubscriberRegistration-nps-title {
+    font-size: 20px;
+  }
+
+  .SubscriberRegistration-nps-subtitle {
+    font-size: 14px;
+  }
+
+  .SubscriberRegistration-main-content {
+    padding: 8px 10px;
+  }
+
+  .SubscriberRegistration-form-section {
+    padding: 15px 10px;
+  }
+
+  .SubscriberRegistration-page-title {
+    font-size: 20px;
+  }
+
+  .SubscriberRegistration-form-title {
+    font-size: 18px;
+  }
+
+  .SubscriberRegistration-nav-item {
+    padding: 12px 15px;
+    font-size: 13px;
+  }
+
+  .SubscriberRegistration-radio-label,
+  .SubscriberRegistration-checkbox-label {
+    font-size: 13px;
+  }
+
+  .SubscriberRegistration-submit-button {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+
+  .SubscriberRegistration-notes-section {
+    padding: 0 10px;
+  }
+
+  .SubscriberRegistration-footer {
+    padding: 10px;
+  }
+}
+
+/* Landscape Mobile Adjustments */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  .SubscriberRegistration-header {
+    padding: 8px 15px;
+  }
+
+  .SubscriberRegistration-logo {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .SubscriberRegistration-main-content {
+    padding: 10px 15px;
+  }
+
+  .SubscriberRegistration-form-section {
+    padding: 15px;
+  }
+}
+
+/* Very Large Screens */
+@media screen and (min-width: 1400px) {
+  .SubscriberRegistration-main-content {
+    max-width: 1400px;
+  }
+
+  .SubscriberRegistration-content-wrapper {
+    gap: 30px;
+  }
+
+  .SubscriberRegistration-sidebar {
+    flex: 0 0 350px;
+  }
+
+  .SubscriberRegistration-form-section {
+    padding: 40px;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .SubscriberRegistration-container {
+    background: white;
+  }
+
+  .SubscriberRegistration-header {
+    background: #f0f0f0 !important;
+    color: black !important;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .SubscriberRegistration-nav-item-active {
+    background: #e0e0e0 !important;
+    color: black !important;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .SubscriberRegistration-submit-button {
+    background: #f0f0f0 !important;
+    color: black !important;
+    border: 1px solid #000 !important;
+    -webkit-print-color-adjust: exact;
+  }
+}
